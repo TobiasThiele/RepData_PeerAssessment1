@@ -110,7 +110,7 @@ median(table.date2$sum)
 ```
 **There are 2304 missing values in the dataset.**
 
-**The difference to the "original" dataset is, that the mean and median are now equal. Due to the fact that if there are missing values the whole day is missing (probably the actvitiy meter was not worn for the whole day) there is no influence on total daily number of steps.**
+**The difference to the mean and median of the "original" dataset is, that the mean and median are now equal.**
 
 ## Are there differences in activity patterns between weekdays and weekends?
 The weekday in the acitvity dataset is expressed as a number (to make the output independent from the country of the operating system) and stored in the vector weekdaynumber. In the vector day the  value "weekend"" is given if the  weekday is 0 or 6 (Sunday or Saturday).
@@ -135,4 +135,5 @@ plot(table$interval, table$weekday, type="l",xlab="Interval", ylab="Weekday step
 ```
 
 ![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
+
 **There is a completely different pattern for weekdays and weekends**
